@@ -7,7 +7,7 @@
 			private $message;  
 		
 		public function  __construct($inRecipient){
-			$this->recipient = $inRecipient; 
+			$this -> setRecipient($inRecipient);
 		}
 		
 		public function setRecipient ($inRecipient){
@@ -41,7 +41,6 @@
 		public function getMessage (){
 			return $this->message;
 		}
-		
 		public function sendMail(){
 		
 			$to = $this->getRecipient();
@@ -52,5 +51,7 @@
 			return mail($to, $subject, $messageText, $header);
 			
 		}
+		
 	}
+			echo "Your email has been sent";
 ?>
