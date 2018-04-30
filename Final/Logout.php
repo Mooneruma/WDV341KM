@@ -9,5 +9,5 @@
 	// destroy the session 
 	session_destroy(); 
 	
-	header('Location: http://kmoonpage.com/IntroPHP/WDV341.html');
+	header('Location: http://kmoonpage.com/IntroPHP/Final/Final.php');
 ?>
